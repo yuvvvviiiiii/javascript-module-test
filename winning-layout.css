@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(137, 193, 94, 1);
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.winner-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  padding: 40px;
+  font-weight: 800;
+}
+
+.stars-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.stars {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.trophy-wrapper {
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.trophy {
+  width: 240px;
+  height: auto;
+  margin-top: 90px;
+  padding: 20px;
+}
+
+.message-wrapper {
+  z-index: 2;
+}
+
+.message-wrapper h1 {
+  font-size: 56px;
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+.message-wrapper p {
+  font-size: 32px;
+  color: #FFFFFF;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#reset-btn{
+  text-decoration: none;
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #181717;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.rules-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: rgba(137, 193, 94, 1);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.modal{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  right: -110px;
+  bottom: -20px;
+  overflow: auto;
+  color: #fff;
+}
+
+
+
+.modal-content{
+  background-color: rgba(0, 68, 41, 1);
+  margin: 15% auto;
+  padding: 20px;
+  border: 10px solid #fff;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: rgb(163, 1, 1);
+  text-decoration: none;
+}
+
+.modal h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.modal ul {
+  list-style: square;
+  padding: 0;
+}
+
+.modal ul li {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}

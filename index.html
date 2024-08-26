@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Score board and message display -->
+    <div class="container">
+        <div class="header">
+          <div class="heading">
+            <p>ROCK<br>PAPER<br>SCISSORS</p>
+          </div>
+            <div class="score-board">
+              <div class="score">COMPUTER SCORE<br><span id="comp-score">0</span></div>
+            <div class="score">YOUR <br>SCORE<br><span id="user-score">0</span></div>
+            </div>  
+        </div>
+        <!-- game area -->
+        <div class="game-area">
+            <div class="choice" id="paper">
+                <img src="/icons/icons8-paper-64 1.png" alt="paper" id="img-1">
+            </div>
+            <div class="choice" id="rock">
+                <img src="icons/icons8-rock-64 1.png" alt="rock" id="img-2">
+            </div>
+            <div class="choice" id= "scissors">
+                <img src="/icons/icons8-scissor-64 1.png" alt="scissors" id="img-3">
+            </div>
+        </div>
+        <!-- result area -->
+        <div class="result-area" id="result" style="display: none;">
+          <div id="user-win">
+            <p id="your-pick">YOU PICKED</p>
+            <div class="user-choice">
+              <!-- <img id="scissors-img"> -->
+            </div>
+          </div>
+          <div class="text-area">
+            <p id="msg">YOU WON<br>AGAINST PC</p>
+            <a href="/" class="play-btn">PLAY AGAIN</a>
+          </div>
+          <div id="comp-win">
+            <p id="your-pick">PC PICKED</p>
+            <div class="comp-choice">
+              <!-- <img id="paper-img"> -->
+            </div>
+          </div>
+        </div>
+    </div>
+    <button class="rules-btn">RULES</button>
+
+    <!-- pop up using modal -->
+    <div id="rules-modal" class="modal">
+      <div class="modal-content">
+          <div class="close-btn">&times;</div>
+          <h2>Game Rules</h2>
+          <ul>
+              <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+              <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+              <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+              <li>If both players lay down the same hand, each player lays down another hand</li>
+          </ul>
+      </div>
+  </div>
+  <!-- Greetings Page(next-button) -->
+    <a href="/congratulations.html" class="next-btn">NEXT</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
